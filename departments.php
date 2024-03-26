@@ -7,8 +7,8 @@
         <div class="sidebar-sticky">
           <h2>Departments</h2>
           <ul class="sidemenu-items-box">
-            <li class="sidemenu-item"><a class="change" href="#ugcourses">UG Courses</a></li>
-            <li class="sidemenu-item"><a class="change" href="#pgcourses">PG Courses</a></li>
+            <li class="sidemenu-item"><a class="change" href="#ugcourses">UG & PG Departments</a></li>
+
           </ul>
         </div>
       </div>

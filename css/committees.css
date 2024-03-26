@@ -1,0 +1,52 @@
+.list-container{
+    color: #636363;
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit,minmax(50%,1fr));
+}
+.list-container li{
+    list-style:symbols(cyclic ">>");
+    font-size: 1.1rem;
+    padding: 10px 0px;
+}
+.list-container li a{
+    display: block;
+    position: relative;
+    text-decoration:  none;
+    color: black;
+}
+.list-container li:hover a,
+.list-container li:focus a{
+color: var(--main-color);
+}
+.list-container  a::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50%;
+    bottom: -3px;
+    visibility: hidden;
+    transform: scale(0,0);
+    background-color: var(--main-color);
+    transition: visibility 0.4s ease-in,transform 0.2s ease-in-out;
+}
+.list-container li:hover a::before{
+    transform: scale(1,1);
+    visibility: visible;
+}
+.objective-box{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+.objective-box ol{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    gap: 10px;
+}
+.internal-content-container ul li a.active{
+    color: var(--main-color);
+    font-weight:bold;
+    letter-spacing: 1.5px;
+}

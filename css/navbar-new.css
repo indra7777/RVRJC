@@ -1,0 +1,109 @@
+.home-nav-box{
+    position: relative;
+}
+.home-nav-box .intro-nav2-link{
+    color:white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 3px solid var(--main-color);
+} 
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    background: rgba(255, 244, 244,0.7);
+    width: 100%;
+    height: 7%;
+    padding:2rem 1rem;
+    z-index: 100;
+     backdrop-filter: blur(70px) saturate(100%);
+    -webkit-backdrop-filter: blur(70px) saturate(100%);
+    -moz-backdrop-filter: blur(70px) saturate(100%);
+    box-shadow: 0px 5px 10px rgba(0,0,41,0.2);
+    transition: height ease 0.2s,all linear 0.1s;
+  }
+  .sticky-nav > li .intro-nav2-link{
+    color: black;
+  }
+  .sticky-nav > li:where(:hover,:focus) .intro-nav2-link{
+    color: var(--main-color);
+  }
+.navbar-image{
+    display: none;
+    width: 10%;
+    margin-left:10px;
+    margin-right: auto;
+
+  }
+  .sticky-nav .navbar-image{
+    display: block;
+  }
+
+  .home-nav-box > button i{
+    color: var(--main-color) !important;
+    font-size: 1.3rem;
+  }
+.dropdown-container .submenu-hover{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height:300px;
+    left:0;
+    margin-top: 0.2rem;
+    border-block:2px solid var(--main-color);
+    border-radius:10px;
+    padding:0 10rem;
+    background-color: #fff4f4;
+    z-index: 10;
+}
+.submenu-heading{
+    position: absolute;
+    left: 10px;
+    min-height:90%;
+    margin: 1% 0px;
+    width: 20%;
+    border-right: 2px solid var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.submenu-heading h1{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.submenu-content{
+    position: absolute;
+    left: 20%;
+    width: 500px;
+    height: 90%;
+    margin: 20px 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.submenu-content li{
+    padding: 6px 10px;
+}
+.submenu-content li:hover a,.submenu-content li:focus a{
+    color: var(--main-color);
+    font-size: 1.2rem;
+}
+.submenu-content li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+.home-nav-box .dropdown-container .submenu-hover{ display: none; } 
+.home-nav-box .dropdown-container:hover>.submenu-hover{ display: block; }
+.home-nav-box .dropdown-container.submenu-hover{ margin-top:0; }
+.home-nav-box .dropdown-container .submenu-hover .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}

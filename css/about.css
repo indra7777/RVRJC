@@ -1,0 +1,127 @@
+.about-box{
+    background-color: #FFF4F4;
+    width:40.62rem;
+    aspect-ratio: 10/3;
+    padding:1rem 1.2rem;
+    border-radius:43px;
+    position: relative;
+    /* box-shadow:0 10px rgb(197, 195, 195); */
+}
+.aboutsec-heading{
+    margin-top: -3rem;
+    transform: translateX(30px);
+    font-size:var( --abousec-heading-size);
+    color:#800000;
+    font-weight: bold;
+}
+.animated-arrow {
+    position: absolute;
+    cursor: pointer;
+    transform: translateY(10px); 
+    display: block;
+    height: 30px;
+    width:80%;  
+  }
+  
+  .animated-arrow  .line-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50% );
+    display: block;
+    height:100%;
+    width:60%;
+  /*   background: rgba(0,0,0,0.5); */
+  }
+  
+  .arrow-container{
+    position: absolute;
+    top: 50%;
+    right: 19%;
+    transform: translate( 0 , -50% );
+    display: block;
+    height: 150%;
+    width:0;
+    overflow: hidden;
+    transition: all 300ms ease;
+  }
+  
+  .animated-arrow .arrow{
+    position:absolute;
+    top:50%;
+    right:10%;
+    transform: translate( -20% , -50% ) rotate(-45deg);
+    transform-origin: 100%, 100%;
+    height: 30px;
+    width: 30px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+  }
+  .animated-arrow .line, 
+  .animated-arrow .text{
+    position:absolute;
+    top:50%;
+    width:25%;
+    background-color: none;
+    transform: translate( -50% , -50% );
+    border-top: 2px solid black;
+    transition: all 300ms ease;
+  }
+  
+  .animated-arrow .left-line{
+    left: 12.5%;
+  }
+  
+  .animated-arrow .right-line{
+    left: 87.5%;
+  }
+  
+  .animated-arrow .text{
+    border: transparent;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    display:grid;
+    place-items: center;
+    transition: all 300ms ease;
+  }
+  .animated-arrow .text h1{
+    color: var(--main-color);
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+  }
+  .animated-arrow:is(:hover,:focus) .arrow-container{
+    width: 30px;
+  }
+  
+  .animated-arrow:is(:hover,:focus) .text{
+    opacity: 0;
+  }
+  
+  .animated-arrow:is(:hover,:focus) .left-line{
+    left:87.5%;
+  }
+.about-box {
+    img {
+        display:block;
+    }
+    .para {
+        font-size:1rem;
+        padding: 1.2rem 1rem 0.8rem;
+        font-weight: 500;
+    }
+    .curve{
+        position: absolute;
+        right:2.18rem;
+        top:0;
+        width:6.25rem;
+    }
+    .principal-box{
+        filter: drop-shadow(5px 5px 4px black);
+        width:12.5rem;
+        height:auto;
+        position: absolute;
+        bottom:0;
+        right:0.93rem;
+    }
+}

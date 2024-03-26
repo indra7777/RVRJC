@@ -1,0 +1,129 @@
+/* staff page */
+main.inner-page-container{
+	font-family: "PT Serif", serif;;
+}
+.row{
+display:flex;
+justify-content:space-around;
+}
+
+.sidebar{
+	margin-top: 4%;
+	width: 25%;
+	border-radius: 10px;
+}
+h1,h2,h3,h4,h5,h6{
+	color: #660000;
+}
+.sidebar .sidebar-sticky {
+	transform: none;
+}
+.left-faculty-box{
+	width: 100%;
+	top: 0;
+	margin-top:20px;
+}
+.left-faculty-box .faculty-image{
+	display: grid;
+	place-items: center;
+	width: 100%;
+	aspect-ratio: 1/1;
+
+}
+.left-faculty-box .faculty-image img{
+	width:220px;
+	aspect-ratio: 1/1;
+	border-radius: 6px;
+	object-fit: cover;
+	box-shadow:0px 4px 4px rgb(0, 0, 0, 0.25);
+}
+.left-info-box div p{
+	display: block;
+}
+
+.personal-info-block span > a{
+	color: #636363;
+
+}
+.inner-content-box{
+	letter-spacing: normal;
+}
+
+.personal-data-table-right{
+	color: #636363;
+	border: none;
+	font-family: inherit;
+	width: 80%;
+	
+}
+.inner-content-box .publication-company-pic-flex{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 1rem;
+	padding: 1rem 0;
+}
+.inner-content-box .publication-company-pic-flex a{
+	padding-left:1rem;
+}
+.inner-content-box .publication-company-pic-flex a:not(:last-of-type)::after{
+	content: "";
+	padding-left: 1rem;
+	border-right: 3px solid #800000;
+}
+.personal-data-table-right tr >td:nth-child(1){
+  color: #800000;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0;
+}
+.left-info-box p{
+	display: inline-block;
+}
+.content-block h5{
+	color: #800000;
+	font-weight: 500;
+    font-size: 1.3em;
+	padding: 7px 0px;
+}
+.content-block p {
+    font-size: 18px;
+    margin-bottom: 2rem;
+    color: #636363;
+    line-height: 30px;
+    font-weight: lighter;
+}
+.content-block :where(ol li,ul li){
+	color: #636363;
+	letter-spacing: normal;
+	padding: 0.5rem 0;
+	line-height: 2rem;
+}
+.content-block #subjectList li{
+
+	line-height: 0.8rem;
+}
+.content-block #subjectList{
+	display: grid;
+	grid-template-columns: 
+	repeat(auto-fit,minmax(50%,1fr));
+}
+.project-sanctioned-block{
+	padding: 1rem 0;
+}
+.project-sanctioned-block .project-sanctioned-table{
+	table-layout: auto;
+	width: 100%;
+	border: none;
+}
+.project-sanctioned-block .project-sanctioned-table thead > tr {
+ background-color: #fff4f4;
+ font-weight: 600;
+ color: #800000;
+}
+.project-sanctioned-block .project-sanctioned-table td{
+	white-space: wrap;
+  text-overflow: ellipsis;
+}
+
+/*  */

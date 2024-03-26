@@ -1,0 +1,99 @@
+
+.placement-container {
+  margin: 110px auto;
+  width: 350px;
+  /* height: 200px; */
+  aspect-ratio: 16/9;
+  position: relative;
+  perspective: 1000px;
+  /* border:1px solid black; */
+}
+.item {
+  display: block;
+  position: absolute;
+  background: transparent;
+  width: 350px;
+  /* height: 200px; */
+  aspect-ratio: 16/9;
+  line-height: 200px;
+  font-size: 5em;
+  text-align: center;
+  color: #FFF;
+  /* opacity: 0.95; */
+  /* border-radius: 10px; */
+  transition: transform 1s;
+  /* border:1px solid rgb(137, 132, 132); */
+}
+.placement-carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.placement-carousel div {
+  transform-style: preserve-3d;
+}
+.placement-carousel img{
+  height:100%;
+  width:100%;
+}
+
+.a {
+  transform: rotateY(0deg) translateZ(350px) rotateY(0deg);
+}
+.b {
+  transform: rotateY(60deg) translateZ(350px) rotateY(-60deg);
+}
+.c {
+  transform: rotateY(120deg) translateZ(350px)  rotateY(-120deg);
+}
+.d {
+  transform: rotateY(180deg) translateZ(350px) rotateY(-180deg);
+}
+.e {
+  transform: rotateY(240deg) translateZ(350px) rotateY(-240deg);
+} 
+.f {
+  transform: rotateY(300deg) translateZ(350px) rotateY(-300deg);
+}
+.g {
+  transform: rotateY(360deg) translateZ(350px) rotateY(-360deg);
+}
+
+@media (max-width:450px){
+  .placement-container,.item{
+    width: 150px;
+    height: 120px;
+  }
+  .placement-container {
+    margin: 11px auto;
+  }
+  .placement-container i{
+    top:140%;
+  }
+  .placement-container i:first-child{
+    left: 5%;
+  }
+  .placement-container i:last-child{
+    right: 5%;
+  }
+  .a {
+    transform: rotateY(0deg) translateZ(150px) rotateY(0deg);
+  }
+  .b {
+    transform: rotateY(60deg) translateZ(150px) rotateY(-60deg);
+  }
+  .c {
+    transform: rotateY(120deg) translateZ(150px)  rotateY(-120deg);
+  }
+  .d {
+    transform: rotateY(180deg) translateZ(150px) rotateY(-180deg);
+  }
+  .e {
+    transform: rotateY(240deg) translateZ(150px) rotateY(-240deg);
+  } 
+  .f {
+    transform: rotateY(300deg) translateZ(150px) rotateY(-300deg);
+  }
+}

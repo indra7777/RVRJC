@@ -1,0 +1,226 @@
+body{
+	margin:30px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+	background-color: #fff;
+}
+a:link{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+.container{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.column{
+	padding-bottom:50px;
+}
+.sidebar{
+	background: rgba(255,255,255,0.75);
+	border-radius: 20px 20px 0px 0px;
+	margin-top : 110px;
+}
+.sidebar .sticky{
+	position: sticky;
+	top: 30px;
+}
+.sidebar h2, .sidebar ul li a:hover, .bread-crumb h1, .bread-crumb a, ul.breadcrumb li{
+	color: #FF9A3C;
+}
+.sidebar h2{
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 24px;
+	margin-top:px;
+	margin-left:-15px;
+	width: calc(100% + 30px);
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #F2F2F2;
+	word-break: break-word;
+	height: 90px;
+	display: flex;
+	align-items: center;
+}
+
+.sidebar ul{	
+
+	list-style:none;
+
+	padding: 0 10px;
+
+}
+
+
+.sidebar ul li{
+
+
+	margin: 10px 0;
+	display: inline-block;
+	width: 100%;
+}
+.sidebar ul li a{
+	font-weight: 500;
+	font-size: 16px;
+	color: #636363;
+	width: 160px;
+	display: block;
+	padding: 5px 0;
+	text-transform: uppercase;
+}
+.bread-crumb{
+	margin: 50px 0;
+}
+.bread-crumb h1{
+	font-weight: 500;
+	font-size: 72px;
+	line-height: 85px;
+	word-break: break-word;
+}
+ul.breadcrumb{
+	padding: 10px 5px;
+	list-style: none;
+	margin-bottom: 0px;
+	background-color: #ffffff;
+}
+ul.breadcrumb li{
+	display: inline;
+	font-size: 18px;
+}
+.bread-crumb ul.breadcrumb li:after{
+	padding:8px;
+	font-family: FontAwesome;
+	content: "\f105";
+}
+ul{
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+}
+
+
+.faculty_list{
+	padding: 10px 0px;
+}
+.faculty_list .rvr_council{
+	padding-bottom:0px;
+}
+.rvr_council{
+	padding: 50px 0px;
+}
+.rvr_council .staff{
+	margin-bottom: 20px;
+}
+.row{
+	display : flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.rvr_council .image{
+	display: inline_block;
+	height: 143px;
+	width: 143px;
+}
+.faculty_list .info_data{
+	padding-bottom:25px;
+}
+.rvr_council .info-data{
+	padding-top: 0px;
+}
+.rvr_council .info-data h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: normal;
+    color: #636363;
+    margin-bottom: 50px;
+    padding: 10px 0px;
+    text-transform: unset;
+}
+.rvr_council .image img{
+	height:143px;
+	width:143px;
+	object-fit: cover;
+	border-radius:10px;
+	box-shadow:0px 4px 4px rgb(0, 0, 0, 0.25);
+}
+.faculty_image .image{
+	display:inline_block;
+	height: 220px;
+	width: 220px;
+}
+.faculty_image .image img{
+	height: 220px;
+	width: 220px;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.25);
+}
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+div{
+	display: block;
+}
+img{
+	vertical-align: middle;
+	border-style: none;
+}
+
+	
+.col-md-4{
+	position: relative;
+	width: 20%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.staff{
+	position: relative;
+	width:30%;
+	padding-right:15px;
+	padding-left:15px;
+}
+.team_sidebar{
+	position: relative;
+	width:30%;
+	padding-right:15px;
+	padding-left:15px;
+}
+.team_sidebar h4,h1{
+	font-size: 20px;
+	line-height: 19px;
+	color: #FF9A3C;
+}
+.team_sidebar p, .team_sidebar a{
+	font-size: 20px;
+	line-height: 19px;
+	color: #000000;
+}
+p{
+	margin-top:0;
+	margin-bottom: 1rem;
+}
+.col-md-3{
+	position: relative;
+	width: 20%;
+	padding-right:10px;
+	padding-left: 15px;
+}
+.col-md-9{
+	padding-left: 30px;
+}
+.col-md-8{
+	padding-left: 20px;
+}

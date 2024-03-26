@@ -1,0 +1,107 @@
+/* news */
+#notice{
+    margin-top: 150px;
+}
+.notice-main-content-container{
+    color: black;
+    border-radius: 43px;
+    background-color: #fff4f4;
+}
+.notice-main-content-box{
+    line-height: 1.5rem;
+    border-radius: 43px;
+    background-color: transparent;
+    overflow-y: scroll;
+}
+.notice-main-content-box::-webkit-scrollbar {
+    width: 0;
+  }  
+  .notice-main-content-box::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px hsl(0, 67%, 88%);; 
+    border-radius: 43px;
+  }
+   
+  .notice-main-content-box::-webkit-scrollbar-thumb {
+    background: #660000; 
+    border-radius: 43px;
+  }
+  
+  .notice-main-content-box::-webkit-scrollbar-thumb:hover {
+    background: #950c0c
+  }
+.notice-btn{
+    color: #660000;
+    border: 1px solid hsl(0, 67%, 88%);
+    background-color: white;
+}
+
+.news-btns-box .nav-link.active, .news-btns-box .show>.nav-link {
+    color: white;
+    background-color: #660000;
+}
+.notice-btn:focus, .notice-btn:hover {
+    color: #660000;
+    border: 1px solid #660000;
+    background-color:hsl(0, 67%, 98%);
+} 
+.download-btn{
+    float: right;
+    text-decoration: none;
+} 
+
+/* news csss */
+.tab-pane {
+    height: 20rem;
+    padding:0 3rem;
+    /* overflow-y: scroll; */
+}
+.nav-pills-custom .nav-link {
+    color: white;
+    border-radius: 0px;
+    background-color: transparent;
+}
+.nav-pills-custom{
+    border-radius: 43px;
+    background: #660000;
+}
+
+.nav-pills-custom .nav-link.active {
+    color: #f78b8b;
+    background: transparent;
+}
+
+/* @media (min-width: 992px) {
+    .nav-pills-custom .nav-link::before {
+        content: '';
+        display: inline-block;
+        border-top: 8px solid transparent;
+        border-left: 10px solid #660000;
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        top: 50%;
+        right: -9px;
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+} */
+
+.nav-pills-custom .nav-link.active::before {
+    opacity: 1;
+}
+/* news css ends */
+
+@media (max-width:450px){
+    .announce{
+        a{
+            font-size: 11px;
+        }
+    }
+    .announce-content{
+        li{
+            font-size: 11px;
+        }
+        .tab-pane{
+            padding:0 1rem;
+        }
+    }
+}

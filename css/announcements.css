@@ -1,0 +1,118 @@
+/* news */
+.notice-main-content-container{
+    color: black;
+    border-radius: 43px;
+    background-color: #fff4f4;
+}
+.notice-main-content-box{
+    line-height: 1.5rem;
+    border-radius: 43px;
+    margin-top: 24px;
+    background-color: transparent;
+    overflow-y: scroll;
+    position: relative;
+}
+.announcements-menu-box{
+    transform: translateY(50%);
+}
+/* li */
+.notice-main-content-box li {
+    width: 100%;
+    color: black;
+    margin-top: 12px;
+    padding-bottom: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+}
+
+.notice-main-content-box li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    opacity: .2;
+}
+.notice-main-content-box li a{ 
+    text-decoration: none;
+    color: black;
+}
+.notice-main-content-box::-webkit-scrollbar {
+    width: 0;
+  }  
+  .notice-main-content-box::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px hsl(0, 67%, 88%);; 
+    border-radius: 43px;
+  }
+   
+  .notice-main-content-box::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 43px;
+  }
+  
+  .notice-main-content-box::-webkit-scrollbar-thumb:hover {
+    background: #950c0c
+  }
+.notice-btn{
+    color: var(--main-color);
+    border: 1px solid hsl(0, 67%, 88%);
+    background-color: white;
+}
+
+.news-btns-box .nav-link.active, .news-btns-box .show>.nav-link {
+    color: white;
+    background-color: var(--main-color);
+}
+.notice-btn:focus, .notice-btn:hover {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    background-color:hsl(0, 67%, 98%);
+} 
+
+/* news csss */
+.tab-pane {
+    height: 20rem;
+    /* overflow-y: scroll; */
+}
+.nav-pills-custom .nav-link {
+    color: white;
+    border-radius: 0px;
+    background-color: transparent;
+    transition: all 0.1s linear;
+}
+.nav-pills-custom .nav-link:hover{
+    color: #fff4f4;
+    transform: scale(1.2);
+}
+.nav-pills-custom{
+    border-radius: 43px;
+    background: var(--main-color);
+}
+
+.nav-pills-custom .nav-link.active {
+    transform: scale(1.45);
+    background: transparent;
+}
+
+/* @media (min-width: 992px) {
+    .nav-pills-custom .nav-link::before {
+        content: '';
+        display: inline-block;
+        border-top: 8px solid transparent;
+        border-left: 10px solid var(--main-color);
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        top: 50%;
+        right: -9px;
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+} */
+
+.nav-pills-custom .nav-link.active::before {
+    opacity: 1;
+}
+/* news css ends */

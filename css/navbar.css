@@ -1,0 +1,82 @@
+.home-nav-box .intro-nav2-link{
+    color:white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 3px solid #660000;
+}
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    background: rgba(255,255,255,0.7);
+    width: 100%;
+    height: 7%;
+    z-index: 100;
+     backdrop-filter: blur(70px) saturate(100%);
+    -webkit-backdrop-filter: blur(70px) saturate(100%);
+    -moz-backdrop-filter: blur(70px) saturate(100%);  
+  }
+  .sticky-nav > li .intro-nav2-link{
+    color: black;
+    transition: color 0.1s linear;
+  }
+  .sticky-nav > li:where(:hover,:focus) .intro-nav2-link{
+    color: var(--main-color);
+  }
+.navbar-image{
+    display: none;
+    width: 10%;
+    margin-left:10px;
+    margin-right: auto;
+
+  }
+  .sticky-nav .navbar-image{
+    display: block;
+  }
+
+  .home-nav-box > button i{
+    color: var(--main-color) !important;
+    font-size: 1.3rem;
+  }.home-nav-box .intro-nav2-link:hover{
+    color:#fff4f4;
+    /* font-size: 1.2rem; */
+    margin-right: 20px;
+    padding-right: 20px;
+    /* border-bottom-right-radius:10px;
+    border-bottom: 3px solid var(--main-color); */
+}
+.dropdown-container .dropdown-menu .dropdown-item:hover{
+background-color: var(--bg-main-color);
+font-weight: bold ;
+color: var(--main-color);
+border-left: 3px solid var(--main-color);
+border-right: 3px solid var(--main-color);
+border-style:double;
+}
+.dropdown-container .dropdown-menu{
+  border-top:2px solid var(--main-color);
+  border-radius:10px;
+  border-bottom:2px solid var(--main-color);
+  background-color: #fff4f4;
+}
+.home-nav-box .dropdown-container .dropdown-menu{ display: none; }
+.home-nav-box .dropdown-container:hover .dropdown-menu{ display: none; }
+.home-nav-box .dropdown-container.dropdown-menu{ margin-top:0; }
+.home-nav-box .dropdown-container .dropdown-menu li {
+    position: relative;
+    }
+    .home-nav-box .dropdown-container .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+.home-nav-box .dropdown-container .dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+}
+.home-nav-box .dropdown-container .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+}

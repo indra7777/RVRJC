@@ -1,0 +1,28 @@
+<?php
+$resf2=mysqli_query($conf,"SELECT * FROM adminexpdetails WHERE facultyid='$facultyid' and dept='$branchF' order by sno ASC") ;  $rownumf2=mysqli_num_rows($resf2); //echo "echo-$facultyIDpart-$branch-$rownumf1";
+
+echo "<table style='margin: 0 auto; border-collapse: collapse' align='center' border='1' bordercolor=$dborder width=$dtablewidth>";
+echo "<tr><td align='left' ><font style='font-size:$subheadingsize; font-weight:bold; color:$subheadingcolor;'> 
+Administrative Experience</font></td>"; 
+
+ echo "</tr>"; 
+ 
+echo "<tr style='font-size:12px; font-weight:bold; color:white;' bgcolor=$dhedcolor  height=30px>
+<td>Description </td>";
+
+if(isset($_SESSION['username']) && $aadharnoF==$_SESSION['username'] && $passwordtest==$_SESSION['password'] ) { 
+echo "<td width=8%>Order SNo</td><td width=50px>Remarks</td>"; } echo "</tr>";
+
+$i=0; $j=0; $c=0;
+while ($rowaf2 = mysqli_fetch_array($resf2)) { $facultyid=$rowaf2['facultyid'];  $rowno=$rowaf2['rowno']; 
+ $description=$rowaf2['description'];  $sno=$rowaf2['sno'];   
+
+if($color==true){ $color1=$colorf1; echo "<tr height='$height1';  style='font-size:12px;' bgcolor='$bgcolor1' >"; } 
+else { $color1=$colorf2; echo "<tr height='$height1';  style='font-size:12px;' bgcolor='$bgcolor2' >";}
+
+echo "<td align='left'><font style='color:$color1;'>$description</td>";
+ 
+echo "</tr>"; $color = !$color;} echo "</table>"; echo "<br> ";
+
+
+

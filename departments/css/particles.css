@@ -1,0 +1,29 @@
+#particles{
+  position: relative;
+  height: 500px;
+}
+#webcoderskull{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+}
+
+canvas{
+    height:100%;
+    background-color:var(--bg-main-color);
+}
+#webcoderskull h1{
+  letter-spacing: 5px;
+  font-size: 5rem;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#welcome-content{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
